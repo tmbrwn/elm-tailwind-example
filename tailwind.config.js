@@ -1,14 +1,11 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
-    theme: {
-        extend: {
-            colors: {
-                gray: colors.trueGray
-            },
-            borderWidth: {
-                '1': '1px'
-            }
-        }
-    }
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 }

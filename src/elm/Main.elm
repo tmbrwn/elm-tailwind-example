@@ -16,15 +16,12 @@ main = Browser.element
 -- MODEL ----------------------------------------------------------------------
 
 
-type alias Model =
-    { message : String
-    }
+type alias Model = String
 
 
 init : () -> (Model, Cmd Msg)
 init _ =
-    ( { message = "Elm ❤️ tailwindcss"
-      }
+    ( "Hello World"
     , Cmd.none
     )
 
@@ -59,5 +56,5 @@ view model =
         [ class "flex items-center justify-center h-screen bg-gray-600" ]
         [ div
             [ class "g-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10 whitespace-nowrap" ]
-            [ text model.message ]
+            [ text model ]
         ]

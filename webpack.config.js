@@ -37,12 +37,12 @@ module.exports = {
     },
     plugins: [
         // generates index.html to put our JS into. note that although
-        // html-webpack-plugin includes CSS files which are generated in the
-        // build, the mechanism which gets CSS into this project is
+        // html-webpack-plugin processes any CSS files which are generated in
+        // the build, the mechanism which gets CSS into this project is
         // style-loader, since the CSS pipeline we have defined above doesn't
         // result in any CSS files being added to the bundle.
         new HtmlWebpackPlugin({
-            title: 'Stuff Tough',
+            title: 'tailwindcss with Elm',
         }),
     ],
     // webpack-dev-server config isn't required here, because the dev server
