@@ -1,0 +1,12 @@
+/* this file gets tailwind classes into the app. the file is first processed
+ * by postcss-loader, which generates the tailwind classes (see
+ * postcss.config.js), but leaves the @tailwind directives here (meaning
+ * importing the file will error). then css-loader resolves the '@' statements
+ * in this file to actual CSS (but then outputs this as JS strings), and
+ * finally, style-loader wraps the previous step in JS that injects the css
+ * into the DOM.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
