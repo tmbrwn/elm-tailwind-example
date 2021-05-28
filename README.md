@@ -21,11 +21,14 @@ If you don't need a fancy dev server, you can get Elm working with Tailwind a lo
     <script src="main.js"></script>
   </head>
   <body>
-      <script>
-          var app = Elm.Main.init({
-            node: document.body
-          });
-      </script>
+    <script>
+      const app = Elm.Main.init({
+        // Elm will replace this element
+        node: document.getElementById('app'),
+        flags,
+      });
+    </script>
+    <div id="app"></div>
   </body>
 </html>
 ```
